@@ -17,7 +17,7 @@ const VAULT_ROOT = process.env.VAULT_ROOT || "/home/mkva/ObsidianVault/🧠 valv
 const SKIP_DIRS = new Set([".obsidian", ".git", ".trash", ".quartz", "node_modules"])
 const ASSET_EXT = new Set([".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".pdf"])
 
-const PUBLISH_RE = /^publish:\s*true\s*(#.*)?$/im
+const PUBLISH_RE = /^publish:\s*["']?true["']?\s*(#.*)?$/im
 const FRONTMATTER_RE = /^---\r?\n([\s\S]*?)\r?\n---/
 
 function walk(dir, out = []) {

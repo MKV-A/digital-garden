@@ -1,6 +1,6 @@
 ---
-title: Welcome to Quartz
+title: Trädgård
+publish: true
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+Valda anteckningar från valvet, publicerade med flit.

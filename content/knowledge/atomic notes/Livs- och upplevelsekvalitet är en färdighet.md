@@ -15,7 +15,7 @@ in my own words:
 publish: true
 ---
 Eftersom vi är upplevelseskapare och meningsskapare, eftersom allting vi upplever är en upplevelse som vi skapar, så avgörs kvalitén på den upplevelsen av hur bra kreatörer vi är: har vi en känslig gom så kan vi plocka ut fler, rikare och djupare nyanser ur det vi smakar, har vi ett taktfullt öra så kan vi bättre uppskatta melodin och det musikaliska i det vi lyssnar till, har vi en välformad och atletisk kropp så kan vi röra oss bättre och uppskatta vår plats och rörelse i rummet bättre. 
-![Expansive mind|300](https://img.magnific.com/free-photo/3d-male-figure-with-flames-head-depicting-mental-health_1048-6613.jpg?semt=ais_hybrid&w=740&q=80)
+![Expansive mind](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK97c1QPu6KTrPgBDi6JRHjA04WQC8hhga_uXFUI7o9bzRB6ttlQq7pXQ&s=10)
 
 Frågor:
 - hur kan jag få ut mer och mer av, ja, allt jag möter, tar mig för och skapar?
@@ -25,3 +25,4 @@ Related
 - [[the coarse palate knows only insipid tastes]]
 - [[the limits of our language define the limits of our world - Ludvig Wittgenstein]]
 - [[an insensitive eye presents ugly or uninteresting sights, the unmusical ear mainly hears jarring noises]]
+- [[Never serious, always sincere]]

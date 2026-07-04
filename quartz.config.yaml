@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Possessio
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -159,6 +159,15 @@ plugins:
       priority: 50
   - source: github:quartz-community/graph
     enabled: true
+    options:
+      localGraph:
+        showTags: false
+        focusOnHover: true
+        fontSize: 1
+      globalGraph:
+        showTags: false
+        focusOnHover: true
+        fontSize: 1
     layout:
       position: right
       priority: 10
@@ -260,7 +269,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
       theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw

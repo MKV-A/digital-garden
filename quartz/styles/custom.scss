@@ -1,3 +1,46 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+.text-highlight {
+  background-color: rgba(132, 165, 157, 0.25);
+}
+
+// Folder listing pages (e.g. "atomic notes" index) render each child note
+// inside an <h3>, which reads heavier than a plain link list.
+.section-li .desc h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+
+  > a {
+    font-weight: 400;
+  }
+}
+
+// Leaf notes in the sidebar tree — keep folder names bold, but not the notes.
+.explorer-content ul li > a {
+  font-weight: 400;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  &::before {
+    content: "V";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: var(--light);
+    font-family: var(--titleFont);
+    font-size: 1rem;
+  }
+}

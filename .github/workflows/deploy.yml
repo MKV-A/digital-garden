@@ -19,21 +19,21 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v6
         with:
           node-version: 24
       - name: Cache dependencies
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Cache Quartz plugins
-        uses: actions/cache@v5
+        uses: actions/cache@v6
         with:
           path: .quartz/plugins
           key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
@@ -46,7 +46,7 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: public
 
@@ -63,7 +63,7 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 1)
         id: deploy1
         continue-on-error: true
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       - name: Wait before retry 1
         if: steps.deploy1.outcome == 'failure'
@@ -73,7 +73,7 @@ jobs:
         id: deploy2
         if: steps.deploy1.outcome == 'failure'
         continue-on-error: true
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 
       - name: Wait before retry 2
         if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
@@ -82,4 +82,4 @@ jobs:
       - name: Deploy to GitHub Pages (attempt 3)
         id: deploy3
         if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
